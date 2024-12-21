@@ -16,7 +16,7 @@ function generateImageStructure(directory) {
     if (item.isDirectory()) {
       structure.push({
         name: capitalize(item.name),
-        path: `/src/${relativePath}/`, // Add the correct '/' separator
+        path: `/src/img/${relativePath}/`, // Add the correct '/' separator
         type: 'directory',
         children: generateImageStructure(itemPath),
       });
