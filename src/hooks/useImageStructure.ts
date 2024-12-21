@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ImageNode } from '../types';
-import { mockImageStructure } from '../../.github/workflows/mockData';
+import { mockImageStructure } from '../mockData';
 
 export function useImageStructure() {
   const [structure, setStructure] = useState<ImageNode[]>([]);
