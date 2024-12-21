@@ -1,4 +1,4 @@
-import { ImageNode } from '../types';
+import { ImageNode } from './types';
 
 // Simulated image structure using Unsplash images
 export const mockImageStructure: ImageNode[] = [
