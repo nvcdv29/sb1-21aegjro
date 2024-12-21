@@ -9,7 +9,7 @@ export const mockImageStructure: ImageNode[] = [
       {
         "name": "al-elmes-Ri7fRm0PRCc-unsplash.jpg",
         "path": "/src/imgarchitecture/al-elmes-Ri7fRm0PRCc-unsplash.jpg",
-        "type": "image"
+        "type": "file"
       },
       {
         "name": "andrei-r-popescu-poyjT5Ap-oM-unsplash.jpg",
