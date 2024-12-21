@@ -23,7 +23,7 @@ function generateImageStructure(directory) {
     } else if (item.isFile() && /\.(png|jpe?g|svg)$/i.test(item.name)) {
       structure.push({
         name: item.name,
-        path: `/src/${relativePath}`, // Ensure correct path with '/'
+        path: `/src/img/${relativePath}`, // Ensure correct path with '/'
         type: 'file',
       });
     }
