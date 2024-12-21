@@ -14,7 +14,7 @@ export function TableOfContents({ structure }: TableOfContentsProps) {
     <div className="border border-gray-200 rounded-lg bg-white">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full px-4 py-2 flex items-center gap-2 hover:bg-gray-50 transition-colors"
+        className="w-full px-4 py-2 flex items-center gap-2 hover:bg-gray-50 hover:rounded-lg transition-colors"
       >
         {isExpanded ? (
           <ChevronDown className="w-4 h-4 text-gray-500" />

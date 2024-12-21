@@ -7,12 +7,12 @@ interface GalleryImageProps {
 
 export function GalleryImage({ image }: GalleryImageProps) {
   return (
-    <div className="relative group overflow-hidden rounded-lg">
+    <div className="relative group flex items-center justify-center overflow-hidden rounded-md">
       <img
         src={image.path}
         alt={image.name}
         loading="lazy"
-        className="w-full h-[200px] sm:h-[250px] md:h-[300px] max-h-[50vh] object-contain rounded-lg transition-transform duration-300"
+        className="max-h-64 w-auto object-contain rounded-md transition-transform duration-300"
       />
     </div>
   );

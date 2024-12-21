@@ -15,15 +15,15 @@ export function GallerySection({ node, level }: GallerySectionProps) {
       <HeadingTag className="text-2xl font-bold mb-6 text-gray-800">
         {node.name}
       </HeadingTag>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-max">
-  {node.children?.map(child => 
-    child.type === 'file' ? (
-      <GalleryImage key={child.path} image={child} />
-    ) : (
-      <GallerySection key={child.path} node={child} level={level + 1} />
-    )
-  )}
-</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {node.children?.map(child => 
+          child.type === 'file' ? (
+            <GalleryImage key={child.path} image={child} />
+          ) : (
+            <GallerySection key={child.path} node={child} level={level + 1} />
+          )
+        )}
+      </div>
     </section>
   );
 }
