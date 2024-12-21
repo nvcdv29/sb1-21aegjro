@@ -20,5 +20,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "generateMockData.js"]
+  "include": ["src", "generateMockData.js", ".github/workflows/mockData.ts"]
 }
