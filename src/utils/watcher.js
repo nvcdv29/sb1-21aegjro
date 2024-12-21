@@ -54,7 +54,7 @@ function generateMockData() {
 
 // Watcher einrichten
 function startWatching() {
-  console.log('Watcher gestartet... Überwache Änderungen im Ordner src/img');
+  console.log('Watcher gestartet... Überwache Änderungen im Ordner /img');
 
   chokidar
     .watch(imgFolder, { ignoreInitial: false })

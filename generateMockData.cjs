@@ -16,14 +16,14 @@ function generateImageStructure(directory) {
     if (item.isDirectory()) {
       structure.push({
         name: capitalize(item.name),
-        path: `/src/img/${relativePath}/`, // Add the correct '/' separator
+        path: `/img/${relativePath}/`, // Add the correct '/' separator
         type: 'directory',
         children: generateImageStructure(itemPath),
       });
     } else if (item.isFile() && /\.(png|jpe?g|svg)$/i.test(item.name)) {
       structure.push({
         name: item.name,
-        path: `/src/img/${relativePath}`, // Ensure correct path with '/'
+        path: `/img/${relativePath}`, // Ensure correct path with '/'
         type: 'file',
       });
     }
