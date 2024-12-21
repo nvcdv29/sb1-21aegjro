@@ -1,8 +1,8 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const imgFolder = path.join(__dirname, 'src', 'img');
-const outputFile = path.join(__dirname, 'src', 'mockData.ts');
+const imgFolder = path.join(__dirname, "src", "img");
+const outputFile = path.join(__dirname, "src", "mockData.ts");
 
 // Funktion, um die Ordnerstruktur zu lesen und ein ImageNode-Objekt zu generieren
 function generateImageStructure(directory) {
@@ -11,20 +11,22 @@ function generateImageStructure(directory) {
 
   items.forEach((item) => {
     const itemPath = path.join(directory, item.name);
-    const relativePath = path.relative(path.join(__dirname, 'src'), itemPath).replace(/\\/g, '/');
+    const relativePath = path
+      .relative(path.join(__dirname, "src"), itemPath)
+      .replace(/\\/g, "/");
 
     if (item.isDirectory()) {
       structure.push({
         name: capitalize(item.name),
         path: relativePath,
-        type: 'directory',
+        type: "directory",
         children: generateImageStructure(itemPath),
       });
     } else if (item.isFile() && /\.(png|jpe?g|svg)$/i.test(item.name)) {
       structure.push({
         name: item.name,
         path: relativePath,
-        type: 'file',
+        type: "file",
       });
     }
   });
@@ -47,7 +49,7 @@ function generateMockData() {
     2
   )};\n`;
 
-  fs.writeFileSync(outputFile, fileContent, 'utf-8');
+  fs.writeFileSync(outputFile, fileContent, "utf-8");
   console.log(`mockData.ts wurde erfolgreich generiert!`);
 }
 
