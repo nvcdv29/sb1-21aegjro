@@ -21,11 +21,11 @@ export function TableOfContents({ structure }: TableOfContentsProps) {
         ) : (
           <ChevronRight className="w-4 h-4 text-gray-500" />
         )}
-        <span className="text-sm font-medium text-gray-500">Contents</span>
+        <span className="text-sm font-medium text-gray-500">Inhalt</span>
       </button>
       {isExpanded && (
         <nav className="px-4 pb-3">
-          <ul className="space-y-1 mt-1">
+          <ul className="space-y-1 space-x-1 mt-1">
             {structure.map(node => (
               <TocItem key={node.path} node={node} level={0} />
             ))}

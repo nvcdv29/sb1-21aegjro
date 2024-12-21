@@ -7,16 +7,13 @@ interface GalleryImageProps {
 
 export function GalleryImage({ image }: GalleryImageProps) {
   return (
-    <div className="relative group aspect-[4/3] overflow-hidden rounded-lg">
+    <div className="relative group overflow-hidden rounded-lg">
       <img
         src={image.path}
         alt={image.name}
         loading="lazy"
-        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+        className="w-full h-[200px] sm:h-[250px] md:h-[300px] max-h-[50vh] object-contain rounded-lg transition-transform duration-300"
       />
-      /* <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <p className="text-white text-sm">{image.name}</p>
-      </div>
     </div>
   );
 }
