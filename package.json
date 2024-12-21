@@ -4,17 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run generate && vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "npm-run-all -p watch mockServer",
     "watch": "node watcher.js",
     "mockServer": "react-scripts start",
-    "prebuild": "node generateMockData.js",
-    "build": "vite build",
-    "dev": "npm run generate && vite",
-    "generate": "node generateMockData.js"
+    "prebuild": "node generateMockData.cjs",
+    "generate": "node generateMockData.cjs"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
@@ -36,6 +34,6 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
-    "vite": "^5.4.2"
+    "vite": "^5.4.11"
   }
 }
