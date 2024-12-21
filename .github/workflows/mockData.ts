@@ -8,17 +8,17 @@ export const mockImageStructure: ImageNode[] = [
     "children": [
       {
         "name": "al-elmes-Ri7fRm0PRCc-unsplash.jpg",
-        "path": "/src/imgarchitecture/al-elmes-Ri7fRm0PRCc-unsplash.jpg",
+        "path": "/imgarchitecture/al-elmes-Ri7fRm0PRCc-unsplash.jpg",
         "type": "file"
       },
       {
         "name": "andrei-r-popescu-poyjT5Ap-oM-unsplash.jpg",
-        "path": "/src/imgarchitecture/andrei-r-popescu-poyjT5Ap-oM-unsplash.jpg",
+        "path": "/imgarchitecture/andrei-r-popescu-poyjT5Ap-oM-unsplash.jpg",
         "type": "file"
       },
       {
         "name": "arc-img-1.jpg",
-        "path": "/src/imgarchitecture/arc-img-1.jpg",
+        "path": "/imgarchitecture/arc-img-1.jpg",
         "type": "file"
       },
       {
