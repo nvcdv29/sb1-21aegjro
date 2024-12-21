@@ -1,5 +1,5 @@
-import React from 'react';
-import { ImageNode } from '../../types';
+import React from "react";
+import { ImageNode } from "../../types";
 
 interface GalleryImageProps {
   image: ImageNode;
